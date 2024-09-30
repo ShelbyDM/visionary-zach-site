@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Fallback background color */
-    background-image: url('background-image.jpg'); /* Replace with your image path */
+    background-image: url('space-background.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the background in place while scrolling */
