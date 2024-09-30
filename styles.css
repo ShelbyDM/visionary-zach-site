@@ -40,16 +40,6 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero-section {
-    height: 100vh;
-    background-image: url('space-background.jpg'); /* Replace with your background image */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
 }
 
 .hero-section h1 {
@@ -164,3 +154,13 @@ footer .socials a {
 footer .socials a:hover {
     text-decoration: underline;
 }
+
+.parallax {
+  background-image: url('studio_background.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
