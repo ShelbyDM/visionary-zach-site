@@ -1,75 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website for rapper Visionary Zach.">
-    <title>Visionary Zach - See the Vision</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Visionary Zach</h1>
-            <p>See the Vision</p>
-            <a href="#music" class="btn-primary">Explore Music</a>
-        </div>
-    </section>
-
-    <!-- Music Section -->
-    <section id="music" class="music-section">
-        <h2>Music</h2>
-        <div class="music-embed">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7FiCnmFeJAjem826S2Mp6j?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-    </section>
-
-    <!-- Bio Section -->
-    <section id="bio" class="bio-section">
-        <h2>About Visionary Zach</h2>
-        <p>Welcome to my official webpage! I am Visionary Zach, a rap artist based in Arkansas. I am passionate about crafting meaningful lyrics and delivering powerful performances that resonate with my audience. My music reflects my journey, experiences, and the vibrant culture of Arkansas. I blend elements of hip-hop beats with chill vibes to create a unique sound that defines my artistic vision.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <form action="mailto:zachmccann25@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="socials">
-            <a href="https://www.instagram.com/visionary.zach/" target="_blank">Instagram</a>
-            <a href="https://x.com/visionaryzach" target="_blank">Twitter</a>
-            <a href="https://www.facebook.com/VizionaryZach" target="_blank">Facebook</a>
-        </div>
-        <p>&copy; 2024 Visionary Zach. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .background {
+    background-image: url('studio_background.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  .text-overlay h1 {
+    font-size: 4em;
+  }
+</style>
+<div class="background">
+  <div class="text-overlay">
+    <h1>Visionary Zach</h1>
+    <p>See the Vision</p>
+  </div>
+</div>
