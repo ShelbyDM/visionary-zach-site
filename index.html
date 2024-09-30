@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary Zach | Official Website</title>
+    <title>Visionary Zach - See the Vision</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
+    <!-- Header and Hero Section -->
     <header>
+        <div class="hero">
+            <img src="your-image.jpg" alt="Visionary Zach">
+            <h1>Visionary Zach</h1>
+            <p>See the Vision</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#music">Music</a></li>
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -20,46 +23,50 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Welcome to Visionary Zach's World</h1>
-        <p>The Next Generation of Rap</p>
-    </section>
-
     <!-- Music Section -->
-    <section id="music" class="music-section">
-        <h2>Music</h2>
-        <p>Check out the latest tracks from Visionary Zach!</p>
-        <iframe src="https://open.spotify.com/embed/artist/your_artist_id" width="300" height="380" frameborder="0" allow="encrypted-media"></iframe>
+    <section id="music">
+        <h2>Listen to My Music</h2>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7FiCnmFeJAjem826S2Mp6j?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
     </section>
 
     <!-- Bio Section -->
-    <section id="bio" class="bio-section">
-        <h2>About Visionary Zach</h2>
-        <p>Visionary Zach is a rapper making waves in the industry with his unique sound...</p>
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>Welcome to my official webpage! I am Visionary Zach, a rap artist based in Arkansas. I am passionate about crafting meaningful lyrics and delivering powerful performances that resonate with my audience. My music reflects my journey, experiences, and the vibrant culture of Arkansas. I blend elements of hip-hop beats with chill vibes to create a unique sound that defines my artistic vision.</p>
+    </section>
+
+    <!-- Social Media Links -->
+    <section id="social">
+        <h2>Follow Me</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/visionary.zach/">Instagram</a></li>
+            <li><a href="https://x.com/visionaryzach">Twitter</a></li>
+            <li><a href="https://www.facebook.com/VizionaryZach">Facebook</a></li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/your-email" method="POST">
-            <label for="name">Name</label>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:zachmccann25@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2024 Visionary Zach. All Rights Reserved.</p>
+        <p>&copy; 2024 Visionary Zach</p>
     </footer>
-
 </body>
 </html>
+
