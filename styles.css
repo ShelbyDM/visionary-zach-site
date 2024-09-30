@@ -1,26 +1,19 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fallback background color */
-    background-image: url('space-background.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background in place while scrolling */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Navigation Bar */
 header {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -28,56 +21,146 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    font-weight: bold;
+    padding: 15px;
 }
 
-section {
-    padding: 40px;
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('space-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
     text-align: center;
 }
 
-#music iframe {
-    width: 80%;
-    margin: 20px auto;
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
 }
 
-form {
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+/* Music Section */
+.music-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.music-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.music-embed {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Bio Section */
+.bio-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.bio-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-form input, form textarea {
-    margin: 10px 0;
+.contact-section label {
+    margin: 10px 0 5px;
+}
+
+.contact-section input, .contact-section textarea {
     padding: 10px;
-    width: 60%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-button {
-    background-color: #333;
-    color: white;
-    border: none;
+.contact-section button {
     padding: 10px 20px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #555;
+.contact-section button:hover {
+    background-color: #e64a19;
 }
 
+/* Footer */
 footer {
-    background-color: #222;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    text-decoration: underline;
 }
